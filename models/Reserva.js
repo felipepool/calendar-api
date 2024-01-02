@@ -26,6 +26,11 @@ const ReservaSchema = Schema({
         type: Schema.Types.ObjectId,
         ref: 'Profesional',
         required: true
+    },
+    servicio: {
+        type: Schema.Types.ObjectId,
+        ref: 'Servicio',
+        required: true
     }
 
 }, {
